@@ -168,36 +168,36 @@ console.log('Your opponent played: ', computer);
 //        leave this blank
 //      else
 //        leave this blank
-if(human == 'rock'){
-  if(human == computer){
+if(human === 'rock'){
+  if(human === computer){
     console.log('It\'s a draw!');
    }
-   if(computer == 'scissors'){
+   if(computer === 'scissors'){
      console.log('You win!');
    }
-   if(computer == 'paper'){
+   if(computer === 'paper'){
      console.log('You lose!');
    }
  }
- if(human == 'paper'){
-  if(human == computer){
+ if(human === 'paper'){
+  if(human === computer){
     console.log('It\'s a draw!');
    }
-   if(computer == 'scissors'){
+   if(computer === 'scissors'){
      console.log('You lose!');
    }
-   if(computer == 'rock'){
+   if(computer === 'rock'){
      console.log('You win!');
    }
  }
- if(human == 'scissors'){
-  if(human == computer){
+ if(human === 'scissors'){
+  if(human === computer){
     console.log('It\'s a draw!');
    }
-   if(computer == 'rock'){
+   if(computer === 'rock'){
      console.log('You lose!');
    }
-   if(computer == 'paper'){
+   if(computer === 'paper'){
      console.log('You win!');
    }
  }
