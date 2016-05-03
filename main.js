@@ -1,39 +1,103 @@
-// JavaScript Looping Exercise
 
 // 1. Output each item in the following Array to your console:
+
+console.log("Question 1");
+
 var livingRoom = ['couch', 'lamp', 'rug', 'shelf'];
+for (var i = 0; i < livingRoom.length; i++) {
+	console.log(livingRoom[i]);
+}
+
 
 // 2. Using a loop, log numbers 22-33 in the console.
+console.log("Question 2");
+
+for(i = 22; i <= 23; i++) {
+	console.log(i);
+}
+
 
 // 3. Using a similar loop, log numbers 75 to 100, only in increments of five.
+console.log("Question 3");
+
+for(i = 75; i <= 100; i += 5) {
+	console.log(i);
+}
+
+
 
 // 4. Write a while loop that logs "This is how a professional loops." to the console 5 times.
-//     Use this as an example:
-//        var counter = 0;
-//        var num = 2;
 
-//        while (num < 1000) {
-//        num += num;
-//        counter++;
-//        }
+console.log("Question 4");
 
-//        console.log(counter);
+var counter = 0;
+var num = 2;
+
+while (num < 1000); {
+num += num;
+console.log("This is how a professional loops.");
+counter++;
+}
+console.log(counter); /// Not sure????
+
+
 
 // 5. Write a conditional statement to find the largest of the numbers in the array provided.
+console.log("Question 5");
+
 var largestNum = [-5, -2, -6, 0, -1]
+for(var i = 0; i < largestNum.length-1; i++){
+ var num = largestNum[i];
+   if(num < largestNum[i+1]){
+     num = largestNum[i+1]
+   }
+ }
+ console.log(num);
+
+
 
 // 6. Separately, use both a for loop and while loop to do the same thing.
 //     Print out the sentence "At home, I have _____ cats." Use the number from your counter to fill in the number.
 //     The numbers should range from 10 to 100, in increments of 25.
+console.log("Question 6");
+for (i = 10; i < 101; i += 25) {
+console.log("At home, I have " + i + " cats.");	
+}
+
+var counter = 10;
+while (counter < 101) {
+	console.log("At home, I have " + counter + " cats.");	
+	counter += 25;
+}
+
+
 
 // 7. Given the following Array, console log 'Even' if the number is even, 'Even and greater than 10' if the
 //    number is even and greater than 10, and 'Odd' if the number is odd.
 //    HINT: Google 'remainder operator'
+console.log("Question 7");
 var numArray = [2, 17, 9, 24, 8];
 
-// 8. Given the following Array, create variable numThrees with the value [13, 23, 33, 43, 53, 63, 73]
+for (i = 0; i < numArray.length; i++) {
+	if (numArray[i] % 2 === 0 && numArray[i] > 10) {
+ +		console.log("Even and greater than 10");
+ 	} else if (numArray[i] % 2 === 0)	{
+		console.log ('Even');
+	} else  {
+		console.log("Odd");
+	}
+}
+
+
+// 8. Given the following Array, create variable numThrees with the value [13, 23, 33, 43, 53, 63, 73]console.log("Question 2");
+console.log("Question 8");
 var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 65, 67, 73, 75, 77]
 var numThrees = [];
+for (i = 0; i < numArray.length; i += 3 ) {
+	numThrees.push(numArray[i])
+}
+console.log(numThrees);
+
 
 // 9. Write a loop that outputs the following to the console:
 // #
@@ -43,6 +107,11 @@ var numThrees = [];
 // #####
 // ######
 // #######
+console.log("Question 9");
+for (i = '#'; i.length < 8; i+='#') {
+	console.log(i);
+}
+
 
 
 // RO SHAM BO!
