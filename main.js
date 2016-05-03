@@ -118,11 +118,18 @@ for (i = '#'; i.length < 8; i+='#') {
 // We're going to create a paper, rock, scissors game that prompts you for your choice and allows the computer to
 // randomly choose. You will use an alert to define the winner.
 
+
 // 10. Use a variable called "human" to prompt the user to type their choice.
+var human = prompt('Rock, paper, or scissors?');
+
 // 11. Define an array called "choices" that consists of "paper", "rock", and "scissors".
+var choicesArray = ['rock', 'paper', 'scissors'];
+
 // 12. Define a variable called "computer" and use Math.random to allow the computer to randomly select a number.
 //    For reference:
 //    Math.random gives you a random number between 0 and 1, which is different each time you call it.
+var computer = Math.random();
+
 // 13. Let's start our conditional statement. Start by reassigning the computer variable to "rock" if the random number
 //    falls between 0 and .33. Run the code until the console prints out "rock" instead of the number.
 //    In English, it will look like this:
@@ -130,9 +137,29 @@ for (i = '#'; i.length < 8; i+='#') {
 //       if the number is between 0 and 33
 //          computer = "rock"
 //       log computer to the console
+
+if (computer >= 0 && computer <=0.33) {
+	computer = 'rock';
+	console.log(computer);
+}
+
+
 // 14. Now add the following conditionals to the same statement:
 //    If the random number is between .34 and .66, set the computer variable to "paper".
 //    If the random number is between .67 and 1, set the computer variable to "scissors". (Who the hell seriously chooses scissors first?)
+if (computer >= 0.34 && computer <=0.66) {
+	computer = 'paper';
+	console.log(computer);
+}
+if (computer >= 0.67 && computer <=1) {
+	computer = 'scissors';
+	console.log(computer);
+}
+
+console.log('You played: ', human);
+console.log('Your opponent played: ', computer);
+
+
 // 15. Using both "human", begin another conditional statement. At this time, leave the statements blank.
 //    In English, it will look like this:
 //      if human is "rock"
@@ -141,9 +168,48 @@ for (i = '#'; i.length < 8; i+='#') {
 //        leave this blank
 //      else
 //        leave this blank
+if(human == 'rock'){
+  if(human == computer){
+    console.log('It\'s a draw!');
+   }
+   if(computer == 'scissors'){
+     console.log('You win!');
+   }
+   if(computer == 'paper'){
+     console.log('You lose!');
+   }
+ }
+ if(human == 'paper'){
+  if(human == computer){
+    console.log('It\'s a draw!');
+   }
+   if(computer == 'scissors'){
+     console.log('You lose!');
+   }
+   if(computer == 'rock'){
+     console.log('You win!');
+   }
+ }
+ if(human == 'scissors'){
+  if(human == computer){
+    console.log('It\'s a draw!');
+   }
+   if(computer == 'rock'){
+     console.log('You lose!');
+   }
+   if(computer == 'paper'){
+     console.log('You win!');
+   }
+ }
+
+
 // 16. Now inside of each condition, we need to compare the "human" variable to the "computer" variable,
 //    then print to the console who won the game.
+
+
+
 // 17. Give yourself a high five for completing your first javascript game!
+
 // 18. Use the game you made above and rework it using a switch statement.
 // 19. What happens if your user enters something other than "rock", "paper", or "scissors?". Change your default case
 //     to print a snarky message to the console if the input doesn't match any of the options.
